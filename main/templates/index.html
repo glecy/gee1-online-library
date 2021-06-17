@@ -3,7 +3,8 @@
 {% block head %}
 {% endblock %}
 {% block body %}
-<div style="background-image: url({{url_for('static', filename='images/banner.png')}}); background-size: cover; padding: 10rem;">
+<div
+    style="background-image: url( {{url_for('static', filename='images/banner.png')}} ); background-size: cover; padding: 10rem;">
     <p class="title">
         Gee1 Online Library
     </p>
@@ -11,8 +12,7 @@
 <p style="text-align: center; padding: 3rem; font-size: 3rem; margin:0">
     Browse our Topics
 </p>
-<div class="panel"
-    style="width: 55%; overflow: auto; margin: 0rem auto; align-self: center;">
+<div class="panel" style="width: 55%; overflow: auto; margin: 0rem auto; align-self: center;">
     <div style="margin: auto; align-self: center; text-align: center; font-size: 2rem;">
         <a href="/all" class="topic">All</a>
         <a href="/filter/Biology" class="topic">Biology</a>
@@ -24,7 +24,7 @@
         <a href="/filter/Physics" class="topic">Physics</a>
         <a href="/filter/Earth Science" class="topic">Earth Science</a>
         <a href="/filter/Literature" class="topic">Literature</a>
-        <a href="/filter/History" class="topic">History</a>      
+        <a href="/filter/History" class="topic">History</a>
     </div>
 
 </div>
