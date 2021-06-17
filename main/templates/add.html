@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<div class="panel" style="width: 70%; overflow: auto; margin: 2rem auto; align-self: center;">
+    <p style="text-align: center; font-size: 3rem;">Add New Entry</p>
+    <form action="/add" method="POST">
+        <label for="title">Title:</label>
+        <input style="margin: 0.5rem; width: 100%" type="text" placeholder="Enter Title" name="title" id="title"
+            required>
+
+        <br><label for="author">Author: </label>
+        <input style="margin: 0.5rem; width: 100%" type="text" placeholder="Enter Author(s)" name="author" id="author"
+            required>
+
+        <br><label for="url">URL: </label>
+        <input style="margin: 0.5rem; width: 100%" type="text" placeholder="Enter URL" name="url" id="url" required>
+
+        <br><label for="topic">Topic: </label>
+        <select class="pill" id="topic" name="topic" required>
+            <option value="Biology">Biology</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Statistics">Statistics</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Physical Education">Physical Education</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="Physics">Physics</option>
+            <option value="Earth Science">Earth Science</option>
+            <option value="Literature">Literature</option>
+            <option value="History">History</option>
+        </select>
+
+        <br><label for="summary">Summary: </label>
+        <textarea class="pill" name="summary" id="summary" placeholder="Enter Summary" style="width: 100%; resize: vertical; border-radius: 2rem; white-space: pre-wrap; min-height: 20rem;" required></textarea>
+
+        <br><button class="pill" type="submit" style="margin: 0.5rem auto;">Add</button>
+    </form>
+</div>
+{% endblock %}

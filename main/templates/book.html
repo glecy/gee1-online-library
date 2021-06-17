@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<div class="panel" style="width: 97%; max-height:80vh; overflow: auto; margin: 2rem auto; align-self: center;">
+    <p style="font-size: 3rem; font-weight:bold">{{book.title}}</p>
+    <p>Author(s): {{book.author}}</p>
+    <p>Topic:<a href='/filter/{{book.topic}}'> {{book.topic}}</a></p>
+    <p>Summary:</p>
+    <pre
+        style="background-color: transparent; border:none; white-space: pre-wrap; font-size: 15px; font-family: Helvetica; color:#787471ff">{{book.summary}}</pre>
+    <a href={{book.url}} target="_blank" rel="noopener noreferrer">View PDF</a>
+    {% if current_user.is_authenticated %}
+    <a href='/update/{{book.id}}'>Update</a>
+    <a href='/delete/{{book.id}}'>Delete</a>
+    {% endif %}
+</div>
+{% endblock %}

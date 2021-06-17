@@ -1,0 +1,104 @@
+body{
+    font-size:1.5rem;
+    background-color: #bdd2b6ff;
+}
+input{
+    padding: 0.5rem;
+    border-radius: 9999px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin: 1rem;
+    border: none;
+    outline: none !important;
+}
+input::placeholder, textarea::placeholder{
+    color:#bab3b1ff;
+    opacity: 1;
+}
+input:-ms-input-placeholder {
+    color:#bab3b1ff;
+}
+nav{
+    overflow: auto;
+    height: max-content;
+    background: #798777ff;
+}
+nav ul{
+    margin:0;
+    padding: 0;
+    float: left;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    color: white;
+    display: block;
+    padding: 1.5rem 1rem;
+}
+nav ul ul li a:hover,
+nav ul ul li a:active,
+nav ul li a:hover,
+nav ul li a.active{
+    color: white;
+    text-decoration: none;
+    background-color: #586958ff;
+}
+nav ul ul{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+nav ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+nav ul ul li{
+    width: 150px;
+    display: list-item;
+    position: relative;
+    list-style: none;
+    background: #798777ff;
+}
+
+.panel{
+    background-color: #f8ede3ff;
+    border-radius: 28px;
+    padding: 2.5rem;
+    margin: 0.75rem;
+    color: #787471ff;
+    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow); 
+    height: fit-content;
+    width: fit-content; 
+    overflow: auto;   
+}
+.topic, .topic:hover{
+    color: #787471ff;
+    padding: 0rem 1rem;
+}
+button.pill{
+    background-color: #a2b29fff;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    border: none;
+    outline: none !important;
+}
+button.pill:active{
+    background-color: #798777ff;
+}
+.pill{
+    padding: 0.5rem;
+    border-radius: 9999px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin: 0.5rem; 
+    border: none; 
+    outline: none !important;
+}
+.title{
+    font-size: 5rem;
+    color: white;
+    font-weight: bold;
+}
