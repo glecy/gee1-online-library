@@ -4,6 +4,6 @@ Gee1 is a functioning online library created as a project for the subject, Softw
 It was made using Python Flask, HTML, CSS, and SQLAlchemy.
 
 Try it out:
-https://gee1-online-library.herokuapp.com/
+https://gee1-library.herokuapp.com/
 
 
